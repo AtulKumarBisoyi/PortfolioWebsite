@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/98d3dc0035.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-sharp fa-solid fa-circle-xmark"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>Web3 Developer</p> -->
+          <h1>Hi, <span>I'm</span><br />Atul Kumar Bisoyi</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT ME SECTION -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user2.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi! I'm Atul Kumar Bisoyi, currently residing in Ghaziabad. I'm a
+              dedicated student pursuing a BTech in Information Technology from
+              Abes Engineering College. My passion lies in the exciting field of
+              blockchain, which presents numerous opportunities for innovation
+              and growth. I aspire to work as a blockchain developer and explore
+              this domain further. Apart from my academic pursuits, I enjoy
+              reading books, listening to podcasts, and engaging in creative
+              writing. I actively participate in community events and volunteer
+              for various causes. My goal is to make a positive impact in the
+              world of technology, specifically in the field of blockchain.
+              Looking forward to connecting with like-minded individuals in the
+              industry!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web3 Development</span><br />Creating Decentralized
+                  Applications
+                </li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>C/C++/Python</span><br />Intermediate Level
+                  Understanding
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Sep 2022 - Oct 2022 </span><br /><b
+                    >Part-time C++ tutor</b
+                  ><br />Proficiently delivered complex concepts in an
+                  understandable manner, aided students in overcoming academic
+                  challenges and coursework problems, and fostered continuous
+                  learning, benefiting both students and the tutor by improving
+                  comprehension, problem-solving skills, and personal growth
+                  through the tutoring process.
+                </li>
+                <!-- <li><span>From - to</span><br />Coming Soon.....</li>
+                <li><span>From - to</span><br />Coming Soon.....</li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />Btech in IT from ABES
+                  Engineering College
+                </li>
+                <li><span>2021</span><br />12th Boards with 92%</li>
+                <li><span>2019</span><br />10th Boards with 91.5%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-bitcoin"></i>
+            <h2>Dapp Development</h2>
+            <p>
+              Unleash the potential of decentralized applications with our solo
+              developer expertise, creating innovative and secure solutions that
+              leverage blockchain technology to revolutionize industries,
+              enhance user experiences, and drive forward the future of
+              decentralized ecosystems.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Empowering businesses and individuals with exceptional web
+              solutions crafted by a skilled solo developer, combining elegant
+              designs, seamless functionality, and optimal user experiences to
+              drive online success and create a lasting digital presence.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-folder-tree"></i>
+            <h2>Data Structure and Algorithms</h2>
+            <p>
+              Unleashing the power of efficient data organization and
+              algorithmic problem-solving through the expertise of a solo
+              developer, delivering optimized solutions that enhance
+              performance, scalability, and overall computational efficiency for
+              a wide range of applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>KBC Quiz Game</h3>
+              <p>
+                I've developed an interactive KBC quiz game using React.js and
+                HTML. Challenge yourself with a series of questions, earning
+                more points as you answer correctly. It's a fun way to test your
+                knowledge, and the game's user-friendly design ensures an
+                enjoyable experience while learning new facts.
+              </p>
+              <a href="https://kbcgame7.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Myntra App Clone</h3>
+              <p>
+                The Myntra App Clone project aims to develop a replica of the
+                popular Myntra e-commerce application.
+              </p>
+              <a href="https://atulkumarbisoyi.github.io/Myntra_Clone/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Protfolio Website</h3>
+              <p>
+                I've created an impressive portfolio website using HTML, CSS,
+                and JavaScript. This project effectively showcases my skills,
+                experiences, and work in a visually appealing manner. Explore my
+                portfolio, discover my expertise, and easily get in touch
+                through this dynamic website.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Top</a>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>abisoyi2004@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8527183321</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/me.atulbisoyi/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/atul_bisoyi?lang=en"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/atul-kumar-bisoyi-3ab1aa1b3/?originalSubdomain=in"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCcmBwAyAVqh1d_W-ajg5aTg"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <a href="images/RESUME_Atul_Kumar_Bisoyi.pdf" download class="btn btn2"
+              >Download My Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Atul Kumar Bisoyi
+          <i class="fa-solid fa-face-laugh-wink"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzCLK5aLuIHrnjMGKRXit02LGa2Y93UpQf76WOdYGr5uMeraFCIkaKJXPVXzka5YexTFw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
